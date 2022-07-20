@@ -52,8 +52,16 @@
                 </ul>
               </li>
             </ul>
-            <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#signup-pop">Registrati</button>
-            <button type="button" class="btn btn-success btn-lg ms-3" data-bs-toggle="modal" data-bs-target="#login-pop">Login</button>
+            <?php if (isset($_SESSION["userid"])) { 
+              echo "<strong class='me-3 fs-5'>" . $_SESSION["username"] . "</strong>";  
+            ?>
+              <form action="includes/logout.inc.php" method="post">
+                <button type="submit" class="btn btn-success btn-lg" name="logout">Logout</button>
+              </form>
+            <?php } else { ?>
+              <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#signup-pop">Registrati</button>
+              <button type="button" class="btn btn-success btn-lg ms-3" data-bs-toggle="modal" data-bs-target="#login-pop">Login</button>
+            <?php } ?> 
           </div>
         </div>
       </nav>

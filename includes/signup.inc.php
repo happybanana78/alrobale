@@ -15,4 +15,7 @@ if (isset($_POST["signup"])) {
     
     $signUp->signupUser();
     header("location: ../index.php");
+} else {
+    header("location: ../index.php?error=bad_access");
+    exit();
 }

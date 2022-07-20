@@ -1,4 +1,4 @@
-    <!-- login popup -->
+<!-- login popup -->
 <div class="modal fade mt-6" id="login-pop" tabindex="-1" aria-labelledby="login-pop" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -7,14 +7,14 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form id="login_form" action="#" method="post">
+        <form id="login_form" action="includes/login.inc.php" method="post">
             <div class="mb-3">
                 <label class="form-label">Username</label>
-                <input type="txt" class="form-control">
+                <input type="txt" class="form-control" name="username" required>
             </div>
             <div class="mb-3">
                 <label class="form-label">Password</label>
-                <input type="password" class="form-control">
+                <input type="password" class="form-control" name="pwd" required>
             </div>
         </form>
       </div>
