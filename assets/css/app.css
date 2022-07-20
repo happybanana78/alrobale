@@ -1,0 +1,568 @@
+* {
+  margin: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  background: linear-gradient(brown, gold);
+}
+body, input, textarea, button {
+  font-family: 'Brush Script MT', cursive;
+}
+.logo-container {
+  position: absolute;
+  left: 5%;
+  top: 2%;
+  cursor: pointer;
+}
+.logo-container img {
+  width: 5em;
+}
+.menu {
+  position: absolute;
+  right: 5%;
+  top: 2%;
+}
+.menu-item {
+  float: right;
+  margin-left: 1em;
+  font-size: 2em;
+  cursor: pointer;
+}
+.login {
+  padding: 0.1em 0.3em 0.1em 0.3em;
+  background-color: gold;
+}
+.login:hover {
+  color: black !important;
+  opacity: 80%;
+}
+.login-bg {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.login-popup {
+  display: none;
+  position: absolute;
+  top: 35%;
+  width: 30%;
+  left: 32%;
+  text-align: center;
+  font-size: 2em;
+  background-color: wheat;
+  border: 5px solid black;
+  padding: 2em 1em 2em 1em;
+  z-index: 10;
+}
+.login-input {
+  width: 40%;
+  height: 2em;
+  border: 3px solid black;
+  font-size: 0.5em;
+}
+.login-btn {
+  padding: 0.5em 2em 0.5em 2em;
+  background-color: goldenrod;
+  margin-top: 3em;
+}
+.signup-bg {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.signup-popup {
+  display: none;
+  position: absolute;
+  top: 30%;
+  width: 30%;
+  left: 32%;
+  text-align: center;
+  font-size: 2em;
+  background-color: wheat;
+  border: 5px solid black;
+  padding: 2em 1em 2em 1em;
+  z-index: 10;
+}
+.signup-btn {
+  padding: 0.5em 2em 0.5em 2em;
+  background-color: goldenrod;
+  margin-top: 3em;
+  font-size: 0.5em;
+}
+.color-white {
+  color: white;
+}
+.color-back {
+  color: black;
+}
+.menu-item:hover {
+  color: gold;
+}
+.page-container {
+  position: absolute;
+  width: 100%;
+  color: wheat;
+  top: 40%;
+  text-align: center;
+  font-size: 3em;
+}
+.success-container {
+  position: absolute;
+  width: 50%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: wheat;
+  top: 35%;
+  left: 24%;
+  text-align: center;
+  font-size: 2em;
+  background-color: brown;
+  border: 5px solid wheat;
+}
+.main-page-button {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: gold;
+  margin-top: 60px;
+  cursor: pointer;
+  font-size: 0.5em;
+}
+.main-page-button:hover {
+  opacity: 80%;
+}
+a {
+  text-decoration: none;
+}
+.error-box {
+  position: absolute;
+  width: 30%;
+  left: 30%;
+  top: 25%;
+  background-color: brown;
+  color: white;
+  padding: 1em 2em 1em 2em;
+  text-align: center;
+  border: 3px solid gold;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 30;
+}
+.error-box img {
+  position: absolute;
+  width: 4%;
+  right: 1%;
+  top: 5%;
+  cursor: pointer;
+}
+
+/* About us */
+.who-text {
+  color: wheat;
+  font-size: 2em;
+}
+.desc-container {
+  position: absolute;
+  width: 30%;
+  color: wheat;
+  top: 30%;
+  left: 6%;
+  float: left;
+}
+.who-img {
+  position: absolute;
+  float: left;
+  width: 12em;
+  top: 35%;
+  left: 55%;
+}
+
+/* Contact */
+.contacts-container {
+  position: absolute;
+  width: 100%;
+  color: wheat;
+  top: 30%;
+  text-align: center;
+  font-size: 2em;
+}
+.contact-text {
+  width: 30%;
+  height: 8em;
+}
+.email-inpt {
+  width: 20%;
+}
+.contact-form-btn {
+  padding: 1em 2em 1em 2em;
+  background-color: gold;
+}
+#footer {
+  position: absolute;
+  width: 100%;
+  bottom: 2%;
+  right: 2%;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* profile page */
+.profile-container {
+  position: absolute;
+  top: 15%;
+  width: 80%;
+  height: 75%;
+  left: 10%;
+  background-color: chocolate;
+  border-radius: 1%;
+  border: 3px solid white;
+  z-index: 10;
+}
+.banner-picture {
+  width: 100%;
+  height: 55%;
+  border-bottom: 2px solid black;
+}
+.profile-main-info {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  text-align: center;
+  z-index: 11;
+}
+.profile-main-info img {
+  width: 200px;
+  border-radius: 50%;
+}
+.profile-main-info p {
+  font-size: 1.6em;
+}
+.profile-picture img {
+  width: 20%;
+}
+.profile-picture:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+.profile-bio {
+  position: relative;
+  width: 50%;
+  top: 10%;
+  left: 3%;
+  font-size: 1.6em;
+  float: left;
+}
+.profile-birth {
+  position: relative;
+  top: 10%;
+  left: 10%;
+  font-size: 1.5em;
+  float: left;
+}
+.edit-profile-btn {
+  position: relative;
+  top: 2%;
+  float: right;
+  right: 1%;
+  font-size: 1.5em;
+  background-color: goldenrod;
+  cursor: pointer;
+}
+.profile-edit {
+  display: none;
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  top: 10%;
+  left: 29%;
+  background-color: gold;
+  border: 5px solid goldenrod;
+  z-index: 12;
+}
+.settings-close {
+  width: 5%;
+  float: right;
+  margin-right: 1%;
+  margin-top: 1%;
+  cursor: pointer;
+}
+.settings {
+  position: relative;
+  top: 15%;
+}
+h2.sett-1 {
+  margin-bottom: 2%;
+  margin-left: 35%;
+}
+h2.sett-2 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 38%;
+}
+h2.sett-3 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 43%;
+}
+.banner-upload {
+  margin-left: 17%;
+}
+.banner-btn-1 {
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.banner-btn-2 {
+  width: 20%;
+  height: 2.5em;
+  margin-left: 5%;
+  background-color: goldenrod;
+  cursor: pointer;
+  border: 1px solid #999;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.birth-date {
+  margin-left: 29%;
+}
+.birth-btn-1 {
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.birth-btn-2 {
+  width: 20%;
+  height: 2em;
+  margin-left: 5%;
+  background-color: goldenrod;
+  cursor: pointer;
+  border: 1px solid #999;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.bio-edit-btn {
+  width: 15%;
+  height: 2.2em;
+  margin-top: 1%;
+  margin-left: 42%;
+  background-color: goldenrod;
+  cursor: pointer;
+  border: 1px solid #999;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.bio-sett-pop-bg {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 15;
+}
+.bio-sett-pop {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 24%;
+  background-color: gold;
+  width: 50%;
+  height: 30em;
+  border: 5px solid goldenrod;
+  text-align: center;
+  z-index: 16;
+}
+.edit-pop-form {
+  margin-top: 2%;
+}
+.edit-pop-txt {
+  position: relative;
+  width: 70%;
+  height: 15em;
+  font-size: 12pt;
+}
+.edit-pop-txt-btn {
+  width: 10%;
+  height: 2.2em;
+  background-color: goldenrod;
+  cursor: pointer;
+  border: 1px solid #999;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.new-post-btn {
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  left: 5%;
+  width: 8%;
+  height: 2.5em;
+  background-color: gold;
+  border: 3px solid goldenrod;
+  font-size: 15pt;
+  cursor: pointer;
+}
+.new-post-btn:hover {
+  opacity: 0.9;
+}
+.create-post-popup {
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  width: 50%;
+  height: 70%;
+  background-color: gold;
+  border: 5px solid goldenrod;
+  z-index: 16;
+}
+.create-post-title {
+  position: relative;
+  top: 2%;
+  left: 2%;
+  font-size: 18pt;
+}
+.sep-1 {
+  position: relative;
+  top: 5%;
+  border: 2px solid goldenrod;
+}
+.sep-2 {
+  position: relative;
+  border: 2px solid goldenrod;
+}
+.new-post-form {
+  position: relative;
+  top: 10%;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.new-post-pub-btn {
+  position: relative;
+  text-align: center;
+  margin-top: 3%;
+  float: right;
+  width: 12%;
+  height: 2em;
+  background-color: goldenrod;
+  border: 1px solid gray;
+  font-size: 15pt;
+  cursor: pointer;
+}
+.new-post-title {
+  position: relative;
+  width: 99%;
+  height: 2.5em;
+  font-size: 12pt;
+}
+.user-posts {
+  position: absolute;
+  width: 70%;
+  height: 75%;
+  top: 15%;
+  right: 5%;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: gold;
+  border: 4px solid goldenrod;
+  overflow-y: auto;
+}
+.alter-post-btn {
+  position: relative;
+  text-align: center;
+  width: 8%;
+  height: 2em;
+  margin-left: 1em;
+  background-color: goldenrod;
+  border: 1px solid gray;
+  font-size: 10pt;
+  cursor: pointer;
+}
+.alter-post-btn:hover {
+  opacity: 0.9;
+}
+.delete-post-popup {
+  display: none;
+  position: absolute;
+  width: 30%;
+  height: 20%;
+  top: 30%;
+  left: 35%;
+  text-align: center;
+  background-color: goldenrod;
+  border: 4px solid gold;
+  z-index: 30;
+}
+.delete-post-content {
+  position: relative;
+  margin-top: 9%;
+}
+.delete-post-btn {
+  position: relative;
+  text-align: center;
+  width: 8%;
+  height: 2em;
+  background-color: gold;
+  border: 1px solid gray;
+  font-size: 10pt;
+  cursor: pointer;
+}
+.delete-post-btn:hover {
+  opacity: 0.9;
+}
+.edit-post-popup {
+  display: none;
+  position: absolute;
+  width: 50%;
+  height: 55%;
+  top: 20%;
+  left: 24%;
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: center;
+  background-color: goldenrod;
+  border: 4px solid gold;
+  z-index: 30;
+}
+.edit-post-content {
+  position: relative;
+  margin-top: 2%;
+}
+.edit-post-btn {
+  position: relative;
+  text-align: center;
+  width: 9%;
+  margin-top: 1%;
+  margin-left: 1%;
+  float: right;
+  height: 2.2em;
+  background-color: gold;
+  border: 1px solid gray;
+  font-size: 10pt;
+  cursor: pointer;
+}
+.edit-post-btn:hover {
+  opacity: 0.9;
+}

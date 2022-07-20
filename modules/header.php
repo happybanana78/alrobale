@@ -1,0 +1,63 @@
+<?php 
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Test Site v1</title>
+    <meta
+      name="description"
+      content="This is my first Accademia delle professioni site!"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-image">
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light navbar-custom-1 py-3">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <img src="../assets/img/logo.png" alt="" width="140">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Camere</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dove Siamo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contatti</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menù
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Menù Ferragosto 2022</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#signup-pop">Registrati</button>
+            <button type="button" class="btn btn-success btn-lg ms-3" data-bs-toggle="modal" data-bs-target="#login-pop">Login</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <?php include_once "modules/login.php" ?>
+    <?php include_once "modules/sign_up.php" ?>
