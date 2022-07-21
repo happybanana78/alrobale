@@ -1,5 +1,7 @@
 <?php
 
+namespace alrobale;
+
 class HandleEmailController extends HandleEmail {
 
     private $userEmail;
@@ -8,8 +10,8 @@ class HandleEmailController extends HandleEmail {
         $this->userEmail = $email;
     }
 
-    //send data to DB
-    public function sendMail() {
+    //send email data to DB
+    public function mail() {
         if ($this->verifyEmail() == false) {
             header("location: ../index.php?error=invalid_email");
             exit();

@@ -1,0 +1,21 @@
+{
+    "name": "happybanana78/alrobale",
+    "description": "official website of agriturismo al robale",
+    "type": "project",
+    "license": "CC",
+    "autoload": {
+        "psr-4": {
+            "alrobale\\": "src/alrobale/"
+        }
+    },
+    "authors": [
+        {
+            "name": "happybanana78",
+            "email": "leonardo.mazzoleni1@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "phpmailer/phpmailer": "^6.5"
+    }
+}

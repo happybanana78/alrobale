@@ -1,5 +1,7 @@
 <?php
 
+namespace alrobale;
+
 class Signup extends Dbh {
 
     protected function checkUser($username, $email) {

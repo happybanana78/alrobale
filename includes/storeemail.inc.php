@@ -1,6 +1,8 @@
 <?php
 
-include_once "autoloader.inc.php";
+require "../vendor/autoload.php";
+
+use alrobale\HandleEmailController;
 
 if (isset($_POST["submit"])) {
 
@@ -8,7 +10,7 @@ if (isset($_POST["submit"])) {
 
     $email = new HandleEmailController($newsEmail);
 
-    $email->sendMail();
+    $email->mail();
 
     header("location: ../index.php");
 }

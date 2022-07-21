@@ -1,4 +1,4 @@
-<?php include_once "includes/autoloader.inc.php" ?>
+<?php require_once "vendor/autoload.php" ?>
 <?php include_once "modules/header.php" ?>
 
 <!-- home section -->

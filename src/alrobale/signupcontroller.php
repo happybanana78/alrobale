@@ -1,5 +1,7 @@
 <?php
 
+namespace alrobale;
+
 class SignupController extends Signup {
 
     private $firstName;

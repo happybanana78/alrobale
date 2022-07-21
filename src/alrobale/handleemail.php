@@ -1,5 +1,7 @@
 <?php
 
+namespace alrobale;
+
 class HandleEmail extends Dbh {
 
     protected function setEmail($email) {

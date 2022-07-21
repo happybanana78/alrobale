@@ -1,6 +1,8 @@
 <?php
 
-include_once "autoloader.inc.php";
+require "../vendor/autoload.php";
+
+use alrobale\SignupController;
 
 if (isset($_POST["signup"])) {
 

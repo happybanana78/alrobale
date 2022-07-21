@@ -1,5 +1,9 @@
 <?php
 
+namespace alrobale;
+
+use \PDO;
+
 class Dbh {
     private $host = "localhost";
     private $user = "user";

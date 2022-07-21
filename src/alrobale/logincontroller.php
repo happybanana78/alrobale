@@ -1,5 +1,7 @@
 <?php
 
+namespace alrobale;
+
 class LoginController extends Login {
 
     private $username;

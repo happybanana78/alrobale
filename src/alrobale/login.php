@@ -1,5 +1,7 @@
 <?php
 
+namespace alrobale;
+
 class Login extends Dbh {
 
     //search user into DB
