@@ -4,22 +4,10 @@ namespace alrobale;
 
 class NewsLetterController extends NewsLetter {
 
-    private $subject;
-
-    public function sendEmail() {
+    public function getEmail() {
 
         $emails = $this->getEmails();
 
-        $this->setSubject();
-
-        for ($i = 0; $i < count($emails); $i++) {
-            mail($emails[$i], $this->subject, "test test");
-        }
-    }
-
-    //set email subject
-    private function setSubject() {
-        $subject = "ciao beppe";
-        $this->subject = $subject;
+        return $emails;
     }
 }

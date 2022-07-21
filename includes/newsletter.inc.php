@@ -3,22 +3,28 @@
 require "../vendor/autoload.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
+use alrobale\NewsLetterController;
 
-$newsletter = new PHPMailer(true);
+$mail = new PHPMailer(true);
 
-$newsletter->isSMTP();
-$newsletter->SMTPAuth = true;
-$newsletter->SMTPSecure = "ssl";
-$newsletter->Host = "ssl0.ovh.net";
-$newsletter->Port = "465";
-$newsletter->isHTML();
-$newsletter->Username = "info@alrobale.info";
-$newsletter->Password = "06predicatore";
-$newsletter->From = "info@alrobale.info";
-$newsletter->Subject = "test";
-$newsletter->Body = "ciao beppe test";
-$newsletter->addAddress("leonardo.mazzoleni1@gmail.com");
+$newsletter = new NewsLetterController;
 
-$newsletter->Send();
+$mail->isSMTP();
+$mail->SMTPAuth = true;
+$mail->SMTPSecure = "ssl";
+$mail->Host = "ssl0.ovh.net";
+$mail->Port = "465";
+$mail->isHTML();
+$mail->Username = "info@alrobale.info";
+$mail->Password = "06predicatore";
+$mail->From = "info@alrobale.info";
+$mail->Subject = "test";
+$mail->Body = "ciao beppe test";
 
-echo "ciao";
+for ($i = 0; $i < count($newsletter->getEmail()); $i++) {
+    $mail->addAddress($newsletter->getEmail()[$i]);
+}
+
+$mail->Send();
+
+//header("location: ../index.php");
