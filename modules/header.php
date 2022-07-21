@@ -6,7 +6,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Test Site v1</title>
+    <title>Agriturismo Al Robale</title>
     <meta
       name="description"
       content="This is my first Accademia delle professioni site!"

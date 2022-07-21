@@ -35,6 +35,7 @@
 <script src="../assets/js/login.js"></script>
 <script src="../assets/js/navbar.js"></script>
 <script src="../assets/js/slider.js"></script>
+<script src="../assets/js/newsletter.js"></script>
 <script src="../assets/js/bootstrap.bundle.js"></script>
 <script src="https://kit.fontawesome.com/dce035b76e.js" crossorigin="anonymous"></script>
 <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>

@@ -25,8 +25,12 @@
     <div class="d-md-flex justify-content-lg-between align-items-center">
       <h2 class="mb-3 mb-sm-0 me-md-2">Iscriviti alla nostra newsletter</h2>
       <div class="input-group news-input">
-        <input type="text" class="form-control" placeholder="Email...">
-        <button class="btn btn-success btn-lg" type="button" id="email_btn">Iscriviti</button>
+        <form action="includes/storeemail.inc.php" method="post" class="d-none">
+          <input id="email_input" type="text" name="user_email">
+          <button id="email_send_btn" type="submit" name="submit"></button>
+        </form>
+        <input id="front_email_input" type="text" class="form-control" placeholder="Email...">
+        <button class="btn btn-success btn-lg" type="button" onclick="transferEmailValue(document.getElementById('front_email_input').value)">Iscriviti</button>
       </div>
     </div>
   </div>
