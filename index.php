@@ -128,7 +128,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form class="fs-5" method="post">
+        <form id="reservation_form" class="fs-5" action="includes/reservation.inc.php" method="post">
           <label>Tipo Camera / Appartmento:*</label>
           <select class="form-select" name="room_type" required>
             <option value="single_room">Camera Singola</option>
@@ -160,7 +160,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
-        <button type="submit" class="btn btn-success">Invia Prenotazione</button>
+        <button type="submit" class="btn btn-success" name="reservation" form="reservation_form">Invia Prenotazione</button>
       </div>
     </div>
   </div>

@@ -12,5 +12,5 @@ if (isset($_POST["submit"])) {
 
     $email->mail();
 
-    header("location: ../index.php");
+    header("location: ../index.php?status=email_success");
 }
