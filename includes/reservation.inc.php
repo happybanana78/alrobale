@@ -16,12 +16,21 @@ if (isset($_POST["reservation"])) {
     $dog = $_POST["dog"];
     $extra = $_POST["customer_extra"];
 
+    if (empty($extra)) {
+        $extra = "nessuno";
+    }
+
     $emailSubject = "Prenotazione Agriturismo al Robale";
 
-    $emailBody = "<strong>Gentile cliente abbiamo ricevuto con successo la sua prenotazione per la camera / appartamento " . $roomType . " in quantità " . $roomQty . "
-                    in data " . $checkIn . " con check-out il " . $checkOut . ". Servizion colazione: " . $breakfast . ", presenza di un cane: " . $dog . " ,
-                    servizi o necessità extra richieste: " . $extra . ". La preghiamo di confermare i dati da lei inseriti e in caso di errori di chiamare il numero:
-                    035 642633. Nelle prossime 24h riceverà una mail che confermerà la sua prenotazione. Grazie mille e buona continuazione. Agriturismo al Robale</strong>";
+    $emailBody = "<p>Gentile cliente abbiamo ricevuto con successo la sua prenotazione per la camera / appartamento " . $roomType . " in quantita' " . $roomQty . "</p>
+                    <p>Secondo i dati da lei inseriti la sua data di arrivo e': <strong>" . $checkIn . "</strong> e la sua data di check-out e': <strong>" . $checkOut . "</strong>.</p>
+                    <p>Come da sua scelta la colazione e': <strong>" . $breakfast . "</strong> e un cane: <strong>" . $dog . "</strong>.</p>
+                    <p>I servizi o le necessita' extra da lei richieste sono: <strong>" . $extra . "</strong>, 
+                    le faremo sapere riguardo le nostre disponibilita' a riguardo nella mail di risposta.</p>
+                    <p>La preghiamo di confermare i dati da lei inseriti e in caso di errori di chiamare il numero: <strong>+39 035 642633</strong>.</p>
+                    <p>Nelle prossime 24h ricevera' una mail che confermera' la sua prenotazione.</p>
+                    <p>Grazie mille e buona continuazione.<p>
+                    <p><strong>Agriturismo al Robale</strong></p>";
 
     $reservation = new Email("ssl", "ssl0.ovh.net", "465", "info@alrobale.info", "06predicatore", "info@alrobale.info", $emailSubject, $emailBody, $_SESSION["useremail"]);
 

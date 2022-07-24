@@ -146,13 +146,13 @@
           <label>Giorno di partenza:*</label>
           <input type="date" class="form-control" name="check-out_date" required>
           <label>Vuoi la colazione?*</label>
-          <p><input type="radio" class="form-check-label" value="yes" name="breakfast" checked required>Si</p>
-          <p><input type="radio" class="form-check-label" value="no" name="breakfast" required>No</p>
+          <p><input type="radio" class="form-check-label" value="richiesta" name="breakfast" checked required>Si</p>
+          <p><input type="radio" class="form-check-label" value="non richiesta" name="breakfast" required>No</p>
           <label>Porti un cane?*</label>
-          <p><input type="radio" class="form-check-label" value="yes" name="dog" checked required>Si</p>
-          <p><input type="radio" class="form-check-label" value="no" name="dog" required>No</p>
+          <p><input type="radio" class="form-check-label" value="sara' presente" name="dog" checked required>Si</p>
+          <p><input type="radio" class="form-check-label" value="non sara' presente" name="dog" required>No</p>
           <label>Hai necessità extra? (optional)</label>
-          <textarea name="" id="" cols="30" rows="10" class="form-control" style="resize: none;" name="customer_extra"></textarea>
+          <textarea cols="30" rows="10" class="form-control" style="resize: none;" name="customer_extra"></textarea>
         </form>
         <br>
         <p class="fs-4 fw-bold text-center">Una volta inviata la prenotazione, 
