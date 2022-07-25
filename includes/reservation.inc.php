@@ -32,11 +32,11 @@ if (isset($_POST["reservation"])) {
                     <p>Grazie mille e buona continuazione.<p>
                     <p><strong>Agriturismo al Robale</strong></p>";
 
-    $reservationClient = new Email("ssl", "ssl0.ovh.net", "465", "info@alrobale.info", "06predicatore", "info@alrobale.info", $emailSubject, $emailBody, $_SESSION["useremail"]);
+    $reservationClient = new Email("ssl", "ssl0.ovh.net", "465", "info@alrobale.info", "*********", "info@alrobale.info", $emailSubject, $emailBody, $_SESSION["useremail"]);
 
     $reservationClient->sendMail();
 
-    $reservationOwner = new Email("ssl", "ssl0.ovh.net", "465", "reservation@alrobale.info", "06Predicatore#", "reservation@alrobale.info", $emailSubject, $emailBody, "info@alrobale.info");
+    $reservationOwner = new Email("ssl", "ssl0.ovh.net", "465", "reservation@alrobale.info", "**********", "reservation@alrobale.info", $emailSubject, $emailBody, "info@alrobale.info");
 
     $reservationOwner->sendMail();
 
