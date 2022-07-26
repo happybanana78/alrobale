@@ -20,7 +20,7 @@
   </head>
   <body class="bg-image">
 
-    <header>
+    <header id="home">
       <nav class="navbar navbar-expand-lg navbar-light navbar-custom-1 py-3">
         <div class="container">
           <a href="#" class="navbar-brand">

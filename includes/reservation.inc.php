@@ -22,7 +22,7 @@ if (isset($_POST["reservation"])) {
 
     $emailSubject = "Prenotazione Agriturismo al Robale";
 
-    $emailBody = "<p>Gentile cliente abbiamo ricevuto con successo la sua prenotazione per la camera / appartamento " . $roomType . " in quantita' " . $roomQty . "</p>
+    $emailClientBody = "<p>Gentile cliente abbiamo ricevuto con successo la sua prenotazione per: " . $roomType . " in quantita': " . $roomQty . ".</p>
                     <p>Secondo i dati da lei inseriti la sua data di arrivo e': <strong>" . $checkIn . "</strong> e la sua data di check-out e': <strong>" . $checkOut . "</strong>.</p>
                     <p>Come da sua scelta la colazione e': <strong>" . $breakfast . "</strong> e un cane: <strong>" . $dog . "</strong>.</p>
                     <p>I servizi o le necessita' extra da lei richieste sono: <strong>" . $extra . "</strong>, 
@@ -32,11 +32,19 @@ if (isset($_POST["reservation"])) {
                     <p>Grazie mille e buona continuazione.<p>
                     <p><strong>Agriturismo al Robale</strong></p>";
 
-    $reservationClient = new Email("ssl", "ssl0.ovh.net", "465", "info@alrobale.info", "*********", "info@alrobale.info", $emailSubject, $emailBody, $_SESSION["useremail"]);
+    $emailHostBody = "<h2><strong>Nuova Prenotazione</strong></h2>
+    <p>Nome cliente: " . $_SESSION["firstname"] . " " . $_SESSION["lastname"] . ".</p>
+    <p>Email cliente: " . $_SESSION["useremail"] . ".</p>
+    <p>Camera richiesta: " . $roomType . ", in quantita': " . $roomQty . ".</p>
+    <p>Data di check-in: <strong>" . $checkIn . "</strong>, data di check-out: <strong>" . $checkOut . "</strong>.</p>
+    <p>Come da sua scelta la colazione e': <strong>" . $breakfast . "</strong> e un cane: <strong>" . $dog . "</strong>.</p>
+    <p>I servizi o le necessita' extra: <strong>" . $extra . "</strong>.</p>";
+
+    $reservationClient = new Email("ssl", "ssl0.ovh.net", "465", "info@alrobale.info", "*********", "info@alrobale.info", $emailSubject, $emailClientBody, $_SESSION["useremail"]);
 
     $reservationClient->sendMail();
 
-    $reservationOwner = new Email("ssl", "ssl0.ovh.net", "465", "reservation@alrobale.info", "**********", "reservation@alrobale.info", $emailSubject, $emailBody, "info@alrobale.info");
+    $reservationOwner = new Email("ssl", "ssl0.ovh.net", "465", "reservation@alrobale.info", "**********", "reservation@alrobale.info", $emailSubject, $emailHostBody, "info@alrobale.info");
 
     $reservationOwner->sendMail();
 

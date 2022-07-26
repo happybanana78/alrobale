@@ -7,9 +7,9 @@
   <div class="container">
     <div class="d-md-flex justify-content-lg-between align-items-center">
       <div class="mt-6 mb-5">
-        <h1 class="text-light fs-20 title-shadow">Agriturismo Al Robale<br>
+        <h1 class="text-light fs-20 title-shadow">Agriturismo Al Robale</h1><br>
         <h2 class="text-light fs-2 title-shadow">Solo su prenotazione</h2><br>
-        <button class="btn btn-success btn-lg fs-5">Prenota Ora!</button></h1>
+        <a class="btn btn-success btn-lg fs-5" href="#footer">Prenota Ora!</a>
       </div>
         <img src="../assets/img/alrobale/1.JPG" alt="" class="home-slider-item w-50 img-fluid border rounded-4">
         <img src="../assets/img/alrobale/2.JPG" alt="" class="home-slider-item w-50 img-fluid border rounded-4">
@@ -131,9 +131,9 @@
         <form id="reservation_form" class="fs-5" action="includes/reservation.inc.php" method="post">
           <label>Tipo Camera / Appartmento:*</label>
           <select class="form-select" name="room_type" required>
-            <option value="single_room">Camera Singola</option>
-            <option value="double_room">Camera Doppia</option>
-            <option value="apartment">Appartamento</option>
+            <option value="Camera Singola">Camera Singola</option>
+            <option value="Camera Doppia">Camera Doppia</option>
+            <option value="Appartamento">Appartamento</option>
           </select>
           <label>Quantità:*</label>
           <select class="form-select" name="room_quantity" required>
@@ -179,7 +179,12 @@
         <h2>120€</h2>
       </div>
       <div class="col-md">
-        <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#reservation_popup">Prenota</button>
+        <?php
+          if (isset($_SESSION["userid"])) { ?>
+            <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#reservation_popup">Prenota</button>
+        <?php } else { ?>
+          <button class="btn btn-success btn-lg" data-bs-toggle="popover" data-bs-title="Attenzione!" data-bs-content="Devi eseguire il login per usare questa funzione.">Prenota</button>
+        <?php } ?>
       </div>
     </div>
     <div class="row align-items-center border-bottom border-success py-4">
@@ -193,7 +198,12 @@
         <h2>200€</h2>
       </div>
       <div class="col-md">
-        <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#reservation_popup">Prenota</button>
+        <?php
+          if (isset($_SESSION["userid"])) { ?>
+            <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#reservation_popup">Prenota</button>
+        <?php } else { ?>
+          <button class="btn btn-success btn-lg" data-bs-toggle="popover" data-bs-title="Attenzione!" data-bs-content="Devi eseguire il login per usare questa funzione.">Prenota</button>
+        <?php } ?>
       </div>
     </div>
     <div class="row align-items-center border-bottom border-success py-4">
@@ -207,7 +217,12 @@
         <h2>280€</h2>
       </div>
       <div class="col-md">
-        <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#reservation_popup">Prenota</button>
+        <?php
+          if (isset($_SESSION["userid"])) { ?>
+            <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#reservation_popup">Prenota</button>
+        <?php } else { ?>
+          <button class="btn btn-success btn-lg" data-bs-toggle="popover" data-bs-title="Attenzione!" data-bs-content="Devi eseguire il login per usare questa funzione.">Prenota</button>
+        <?php } ?>
       </div>
     </div>
   </div>
