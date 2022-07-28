@@ -1,4 +1,8 @@
-<?php require_once "vendor/autoload.php" ?>
+<?php
+
+use alrobale\Slide;
+
+ require_once "vendor/autoload.php" ?>
 <?php include_once "modules/header.php" ?>
 
 <!-- home section -->
@@ -6,9 +10,14 @@
 <section class="bg-land text-light p-5 text-center">
   <div class="container">
     <div class="d-md-flex justify-content-lg-between align-items-center">
-      <img src="../assets/img/alrobale/1.JPG" alt="" class="home-slider-item w-50 img-fluid border rounded-4">
-      <img src="../assets/img/alrobale/2.JPG" alt="" class="home-slider-item w-50 img-fluid border rounded-4">
-      <img src="../assets/img/alrobale/3.JPG" alt="" class="home-slider-item w-50 img-fluid border rounded-4">
+      <?php
+        $imgPath = "assets/img/alrobale/*";
+        $slide = new Slide($imgPath);
+        $imgCount = count($slide->loopDir());
+        for ($i = 0; $i < $imgCount; $i++) {
+          echo "<img src='" . $slide->loopDir()[$i] . "' alt='' class='home-slider-item w-50 img-fluid border rounded-4'>";
+        }
+      ?>
       <div class="mt-6 mb-5">
         <h1 class="text-light fs-20 title-shadow">Agriturismo Al Robale</h1><br>
         <h2 class="text-light fs-2 title-shadow">Solo su prenotazione</h2><br>
