@@ -29,7 +29,7 @@
     <div class="position-relative text-center p-4" style="background-color: rgba(0,0,0,0.05);">
     © 2022 Copyright:
     <a class="text-reset fw-bold" href="../index.php">alrobale.info</a>
-    <a href="#home" class="btn btn-warning btn-lg position-absolute bottom-0 end-0 me-5 mb-2 d-none d-md-block">
+    <a href="#home" class="btn btn-brown btn-lg position-absolute bottom-0 end-0 me-5 mb-2 d-none d-md-block">
         <i class="fas fa-arrow-up"></i>
     </a>
     </div>

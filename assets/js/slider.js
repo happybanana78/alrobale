@@ -15,7 +15,7 @@ function homeSlider() {
     if (slideIndex >= slideItem1.length) {
         slideIndex = 0;
     }
-    setTimeout(homeSlider, 2000);
+    setTimeout(homeSlider, 4000);
 }
 
 function loadSlides() {

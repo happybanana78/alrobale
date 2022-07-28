@@ -12,7 +12,7 @@
       <div class="mt-6 mb-5">
         <h1 class="text-light fs-20 title-shadow">Agriturismo Al Robale</h1><br>
         <h2 class="text-light fs-2 title-shadow">Solo su prenotazione</h2><br>
-        <a class="btn btn-warning btn-lg fs-5" href="#footer">Prenota Ora!</a>
+        <a class="btn btn-brown btn-lg fs-5" href="#footer">Prenota Ora!</a>
       </div>
         
     </div>
@@ -31,7 +31,7 @@
           <button id="email_send_btn" type="submit" name="submit"></button>
         </form>
         <input id="front_email_input" type="text" class="form-control" placeholder="Email...">
-        <button class="btn btn-warning btn-lg" type="button" onclick="transferEmailValue(document.getElementById('front_email_input').value)">Iscriviti</button>
+        <button class="btn btn-brown btn-lg" type="button" onclick="transferEmailValue(document.getElementById('front_email_input').value)">Iscriviti</button>
       </div>
     </div>
   </div>
@@ -161,7 +161,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
-        <button type="submit" class="btn btn-warning" name="reservation" form="reservation_form">Invia Prenotazione</button>
+        <button type="submit" class="btn btn-brown" name="reservation" form="reservation_form">Invia Prenotazione</button>
       </div>
     </div>
   </div>
@@ -182,9 +182,9 @@
       <div class="col-md">
         <?php
           if (isset($_SESSION["userid"])) { ?>
-            <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#reservation_popup">Prenota</button>
+            <button class="btn btn-brown btn-lg" data-bs-toggle="modal" data-bs-target="#reservation_popup">Prenota</button>
         <?php } else { ?>
-          <button class="btn btn-warning btn-lg" data-bs-toggle="popover" data-bs-title="Attenzione!" data-bs-content="Devi eseguire il login per usare questa funzione.">Prenota</button>
+          <button class="btn btn-brown btn-lg" data-bs-toggle="popover" data-bs-title="Attenzione!" data-bs-content="Devi eseguire il login per usare questa funzione.">Prenota</button>
         <?php } ?>
       </div>
     </div>
@@ -201,9 +201,9 @@
       <div class="col-md">
         <?php
           if (isset($_SESSION["userid"])) { ?>
-            <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#reservation_popup">Prenota</button>
+            <button class="btn btn-brown btn-lg" data-bs-toggle="modal" data-bs-target="#reservation_popup">Prenota</button>
         <?php } else { ?>
-          <button class="btn btn-warning btn-lg" data-bs-toggle="popover" data-bs-title="Attenzione!" data-bs-content="Devi eseguire il login per usare questa funzione.">Prenota</button>
+          <button class="btn btn-brown btn-lg" data-bs-toggle="popover" data-bs-title="Attenzione!" data-bs-content="Devi eseguire il login per usare questa funzione.">Prenota</button>
         <?php } ?>
       </div>
     </div>
@@ -220,9 +220,9 @@
       <div class="col-md">
         <?php
           if (isset($_SESSION["userid"])) { ?>
-            <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#reservation_popup">Prenota</button>
+            <button class="btn btn-brown btn-lg" data-bs-toggle="modal" data-bs-target="#reservation_popup">Prenota</button>
         <?php } else { ?>
-          <button class="btn btn-warning btn-lg" data-bs-toggle="popover" data-bs-title="Attenzione!" data-bs-content="Devi eseguire il login per usare questa funzione.">Prenota</button>
+          <button class="btn btn-brown btn-lg" data-bs-toggle="popover" data-bs-title="Attenzione!" data-bs-content="Devi eseguire il login per usare questa funzione.">Prenota</button>
         <?php } ?>
       </div>
     </div>

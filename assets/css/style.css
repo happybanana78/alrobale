@@ -56,6 +56,10 @@ body {
     background-position: 10%;
 }
 
+.btn-brown {
+    background-color: chocolate !important;
+}
+
 .title-shadow {
     text-shadow: 2px 0px black;
 }

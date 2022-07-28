@@ -32,7 +32,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Chiudi</button>
-        <button type="submit" class="btn btn-warning" form="submit_form" name="signup">Registrati</button>
+        <button type="submit" class="btn btn-brown" form="submit_form" name="signup">Registrati</button>
       </div>
     </div>
   </div>

@@ -56,11 +56,11 @@
               echo "<strong class='me-3 fs-5'>" . $_SESSION["username"] . "</strong>";  
             ?>
               <form action="includes/logout.inc.php" method="post">
-                <button type="submit" class="btn btn-warning btn-lg" name="logout">Logout</button>
+                <button type="submit" class="btn btn-brown btn-lg" name="logout">Logout</button>
               </form>
             <?php } else { ?>
-              <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#signup-pop">Registrati</button>
-              <button type="button" class="btn btn-warning btn-lg ms-3" data-bs-toggle="modal" data-bs-target="#login-pop">Login</button>
+              <button type="button" class="btn btn-brown btn-lg" data-bs-toggle="modal" data-bs-target="#signup-pop">Registrati</button>
+              <button type="button" class="btn btn-brown btn-lg ms-3" data-bs-toggle="modal" data-bs-target="#login-pop">Login</button>
             <?php } ?> 
           </div>
         </div>
