@@ -11,7 +11,7 @@ use alrobale\Slide;
   <div class="container">
     <div class="d-md-flex justify-content-lg-between align-items-center">
       <?php
-        $imgPath = "assets/img/alrobale/*";
+        $imgPath = "assets/img/alrobale/";
         $slide = new Slide($imgPath);
         $imgCount = count($slide->loopDir());
         for ($i = 0; $i < $imgCount; $i++) {
