@@ -1,6 +1,6 @@
 <!-- footer section -->
 <footer id="footer" class="text-center text-dark fs-5 bg-footer">
-    <section class="d-flex justify-content-center p-4 border-bottom border-success">
+    <section class="d-flex justify-content-center p-4 border-brown">
         <div>
             <a href="https://www.instagram.com/agriturismo_al_robale/" target="_blank" class="me-4 text-reset">
                 <i class="fa fa-instagram fs-5"></i>
@@ -29,7 +29,7 @@
     <div class="position-relative text-center p-4" style="background-color: rgba(0,0,0,0.05);">
     © 2022 Copyright:
     <a class="text-reset fw-bold" href="../index.php">alrobale.info</a>
-    <a href="#home" class="btn btn-success btn-lg position-absolute bottom-0 end-0 me-5 mb-2 d-none d-md-block">
+    <a href="#home" class="btn btn-warning btn-lg position-absolute bottom-0 end-0 me-5 mb-2 d-none d-md-block">
         <i class="fas fa-arrow-up"></i>
     </a>
     </div>

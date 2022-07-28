@@ -20,7 +20,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Chiudi</button>
-        <button type="submit" class="btn btn-success" form="login_form" name="login">Login</button>
+        <button type="submit" class="btn btn-warning" form="login_form" name="login">Login</button>
       </div>
     </div>
   </div>

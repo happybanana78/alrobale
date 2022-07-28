@@ -9,7 +9,7 @@
     <title>Agriturismo Al Robale</title>
     <meta
       name="description"
-      content="This is my first Accademia delle professioni site!"
+      content="Agriturismo al robale official website"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -32,16 +32,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Camere</a>
+                <a class="nav-link" href="#rooms">Camere</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Dove Siamo</a>
+                <a class="nav-link" href="#where">Dove Siamo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contatti</a>
+                <a class="nav-link" href="#footer">Contatti</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -56,11 +56,11 @@
               echo "<strong class='me-3 fs-5'>" . $_SESSION["username"] . "</strong>";  
             ?>
               <form action="includes/logout.inc.php" method="post">
-                <button type="submit" class="btn btn-success btn-lg" name="logout">Logout</button>
+                <button type="submit" class="btn btn-warning btn-lg" name="logout">Logout</button>
               </form>
             <?php } else { ?>
-              <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#signup-pop">Registrati</button>
-              <button type="button" class="btn btn-success btn-lg ms-3" data-bs-toggle="modal" data-bs-target="#login-pop">Login</button>
+              <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#signup-pop">Registrati</button>
+              <button type="button" class="btn btn-warning btn-lg ms-3" data-bs-toggle="modal" data-bs-target="#login-pop">Login</button>
             <?php } ?> 
           </div>
         </div>

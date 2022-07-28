@@ -6,14 +6,15 @@
 <section class="bg-land text-light p-5 text-center">
   <div class="container">
     <div class="d-md-flex justify-content-lg-between align-items-center">
+      <img src="../assets/img/alrobale/1.JPG" alt="" class="home-slider-item w-50 img-fluid border rounded-4">
+      <img src="../assets/img/alrobale/2.JPG" alt="" class="home-slider-item w-50 img-fluid border rounded-4">
+      <img src="../assets/img/alrobale/3.JPG" alt="" class="home-slider-item w-50 img-fluid border rounded-4">
       <div class="mt-6 mb-5">
         <h1 class="text-light fs-20 title-shadow">Agriturismo Al Robale</h1><br>
         <h2 class="text-light fs-2 title-shadow">Solo su prenotazione</h2><br>
-        <a class="btn btn-success btn-lg fs-5" href="#footer">Prenota Ora!</a>
+        <a class="btn btn-warning btn-lg fs-5" href="#footer">Prenota Ora!</a>
       </div>
-        <img src="../assets/img/alrobale/1.JPG" alt="" class="home-slider-item w-50 img-fluid border rounded-4">
-        <img src="../assets/img/alrobale/2.JPG" alt="" class="home-slider-item w-50 img-fluid border rounded-4">
-        <img src="../assets/img/alrobale/3.JPG" alt="" class="home-slider-item w-50 img-fluid border rounded-4">
+        
     </div>
   </div>
 </section>
@@ -30,7 +31,7 @@
           <button id="email_send_btn" type="submit" name="submit"></button>
         </form>
         <input id="front_email_input" type="text" class="form-control" placeholder="Email...">
-        <button class="btn btn-success btn-lg" type="button" onclick="transferEmailValue(document.getElementById('front_email_input').value)">Iscriviti</button>
+        <button class="btn btn-warning btn-lg" type="button" onclick="transferEmailValue(document.getElementById('front_email_input').value)">Iscriviti</button>
       </div>
     </div>
   </div>
@@ -160,15 +161,15 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
-        <button type="submit" class="btn btn-success" name="reservation" form="reservation_form">Invia Prenotazione</button>
+        <button type="submit" class="btn btn-warning" name="reservation" form="reservation_form">Invia Prenotazione</button>
       </div>
     </div>
   </div>
 </div>
 
-<section class="bg-rooms p-5 text-dark">
+<section id="rooms" class="bg-rooms p-5 text-dark">
   <div class="container text-center">
-    <div class="row align-items-center border-bottom border-top border-success py-4">
+    <div class="row align-items-center border-brown border-brown-top py-4">
       <div class="col-md">
       <img src="../assets/img/alrobale/camera.JPG" alt="" class="border rounded-4 w-50" role="button" data-bs-toggle="modal" data-bs-target="#single_room">
       </div>
@@ -176,18 +177,18 @@
         <h2>Stanza Singola</h2>
       </div>
       <div class="col-md">
-        <h2>120€</h2>
+        <h2>da 110€ a 130€</h2>
       </div>
       <div class="col-md">
         <?php
           if (isset($_SESSION["userid"])) { ?>
-            <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#reservation_popup">Prenota</button>
+            <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#reservation_popup">Prenota</button>
         <?php } else { ?>
-          <button class="btn btn-success btn-lg" data-bs-toggle="popover" data-bs-title="Attenzione!" data-bs-content="Devi eseguire il login per usare questa funzione.">Prenota</button>
+          <button class="btn btn-warning btn-lg" data-bs-toggle="popover" data-bs-title="Attenzione!" data-bs-content="Devi eseguire il login per usare questa funzione.">Prenota</button>
         <?php } ?>
       </div>
     </div>
-    <div class="row align-items-center border-bottom border-success py-4">
+    <div class="row align-items-center border-brown py-4">
       <div class="col-md">
         <img src="../assets/img/alrobale/camera.JPG" alt="" class="border rounded-4 w-50" role="button" data-bs-toggle="modal" data-bs-target="#double_room">
       </div>
@@ -195,18 +196,18 @@
         <h2>Stanza Doppia</h2>
       </div>
       <div class="col-md">
-        <h2>200€</h2>
+        <h2>da 120€ a 160€</h2>
       </div>
       <div class="col-md">
         <?php
           if (isset($_SESSION["userid"])) { ?>
-            <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#reservation_popup">Prenota</button>
+            <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#reservation_popup">Prenota</button>
         <?php } else { ?>
-          <button class="btn btn-success btn-lg" data-bs-toggle="popover" data-bs-title="Attenzione!" data-bs-content="Devi eseguire il login per usare questa funzione.">Prenota</button>
+          <button class="btn btn-warning btn-lg" data-bs-toggle="popover" data-bs-title="Attenzione!" data-bs-content="Devi eseguire il login per usare questa funzione.">Prenota</button>
         <?php } ?>
       </div>
     </div>
-    <div class="row align-items-center border-bottom border-success py-4">
+    <div class="row align-items-center border-brown py-4">
       <div class="col-md">
         <img src="../assets/img/alrobale/camera.JPG" alt="" class="border rounded-4 w-50" role="button" data-bs-toggle="modal" data-bs-target="#apartment">
       </div>
@@ -219,9 +220,9 @@
       <div class="col-md">
         <?php
           if (isset($_SESSION["userid"])) { ?>
-            <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#reservation_popup">Prenota</button>
+            <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#reservation_popup">Prenota</button>
         <?php } else { ?>
-          <button class="btn btn-success btn-lg" data-bs-toggle="popover" data-bs-title="Attenzione!" data-bs-content="Devi eseguire il login per usare questa funzione.">Prenota</button>
+          <button class="btn btn-warning btn-lg" data-bs-toggle="popover" data-bs-title="Attenzione!" data-bs-content="Devi eseguire il login per usare questa funzione.">Prenota</button>
         <?php } ?>
       </div>
     </div>
@@ -230,7 +231,7 @@
 
 <!-- Where / Map Section -->
 
-<section class="bg-map text-light p-5">
+<section id="where" class="bg-map text-light p-5">
   <div class="container align-items-center">
     <div class="row">
       <div class="col-md lead text-center text-md-start">
