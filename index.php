@@ -1,9 +1,12 @@
 <?php
 
-use alrobale\Slide;
+  use alrobale\Slide;
 
- require_once "vendor/autoload.php" ?>
-<?php include_once "modules/header.php" ?>
+  require_once "vendor/autoload.php";
+  
+  include_once "modules/header.php";
+
+?>
 
 <!-- home section -->
 
@@ -20,7 +23,7 @@ use alrobale\Slide;
           }
         ?>
       </div>
-      <div class="mt-6 mb-5">
+      <div class="mt-6 mb-5 text-center">
         <h1 class="text-light fs-20 title-shadow">Agriturismo Al Robale</h1><br>
         <h2 class="text-light fs-2 title-shadow">Solo su prenotazione</h2><br>
         <a class="btn btn-brown btn-lg fs-5" href="#footer">Prenota Ora!</a>
@@ -59,7 +62,7 @@ use alrobale\Slide;
       </div>
       <div class="modal-body">
         <div class="pb-3 border-brown">
-          <img class="img-fluid" src="../assets/img/alrobale/camera.JPG">
+          <img class="img-fluid" src="../assets/img/camera.jpg">
         </div>
         <h3 class="mt-2">La stanza è provvista di:</h3>
         <ul class="fs-4">
@@ -89,7 +92,7 @@ use alrobale\Slide;
       </div>
       <div class="modal-body">
         <div class="pb-3 border-brown">
-          <img class="img-fluid" src="../assets/img/alrobale/camera.JPG">
+          <img class="img-fluid" src="../assets/img/camera.jpg">
         </div>
         <h3 class="mt-2">La stanza è provvista di:</h3>
         <ul class="fs-4">
@@ -119,17 +122,21 @@ use alrobale\Slide;
       </div>
       <div class="modal-body">
         <div class="pb-3 border-brown">
-          <img class="img-fluid" src="../assets/img/alrobale/camera.JPG">
+          <img class="img-fluid" src="../assets/img/appartamento.jpg">
         </div>
         <h3 class="mt-2">La stanza è provvista di:</h3>
         <ul class="fs-4">
           <li><i class="fa-solid fa-bed"></i>&nbsp; Letto Matrimoniale</li>
+          <li><i class="fa-solid fa-bed"></i>&nbsp; Letto Singolo</li>
+          <li><i class="fa-solid fa-couch"></i>&nbsp; Divano letto</li>
           <li><i class="fa-solid fa-wind"></i>&nbsp; Aria Condizionata</li>
           <li><i class="fa-solid fa-bath"></i>&nbsp; Bagno Privato con Doccia</li>
           <li><i class="fa-solid fa-fire-flame-curved"></i>&nbsp; Bollitore</li>
           <li><i class="fa-solid fa-wifi"></i>&nbsp; WiFi</li>
           <li><i class="fa-solid fa-vault"></i>&nbsp; Cassaforte</li>
           <li><i class="fa-solid fa-tv"></i>&nbsp; Televisione</li>
+          <li><i class="fa-solid fa-bottle-water"></i>&nbsp; Mini Frigo</li>
+          <li><i class="fa-solid fa-mountain-sun"></i>&nbsp; Balcone con sdraio</li>
         </ul>
       </div>
       <div class="modal-footer">
@@ -148,6 +155,9 @@ use alrobale\Slide;
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
+        <div class="text-center">
+          <h3 class="fw-bold">I prezzi delle camere variano in base alla presenza della colazione</h3>
+        </div>
         <form id="reservation_form" class="fs-5" action="includes/reservation.inc.php" method="post">
           <label>Tipo Camera / Appartmento:*</label>
           <select class="form-select" name="room_type" required>
@@ -176,7 +186,8 @@ use alrobale\Slide;
         </form>
         <br>
         <p class="fs-4 fw-bold text-center">Una volta inviata la prenotazione, 
-          riceverai dai noi una mail non appena l'avremo confermata.</p>
+          riceverai dai noi una mail non appena l'avremo confermata. Se vuoi pagare direttamente
+          online puoi ordinare tramite <a href="https://www.booking.com/hotel/it/agriturismo-al-robale-almenno-san-bartolomeo1.it.html?aid=356980&label=gog235jc-1DCAsocUItYWdyaXR1cmlzbW8tYWwtcm9iYWxlLWFsbWVubm8tc2FuLWJhcnRvbG9tZW8xSAdYA2hxiAEBmAEHuAEXyAEM2AED6AEB-AECiAIBqAIDuAKHy56XBsACAdICJGIyYzU0YjlkLWJhNTMtNDRjMC05NmM5LTZhZmI2OWVmN2IyNtgCBOACAQ&sid=60f28669fda8671b60514e6219ebe352&dist=0&lang=it&room1=A%2CA&sb_price_type=total&soz=1&type=total&lang_click=other&cdl=de&lang_changed=1" target="_blank">booking</a>.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
@@ -196,7 +207,7 @@ use alrobale\Slide;
         <h2>Stanza Singola</h2>
       </div>
       <div class="col-md">
-        <h2>da 110€ a 130€</h2>
+        <h2>da 100€ a 120€</h2>
       </div>
       <div class="col-md">
         <?php
@@ -215,7 +226,7 @@ use alrobale\Slide;
         <h2>Stanza Doppia</h2>
       </div>
       <div class="col-md">
-        <h2>da 120€ a 160€</h2>
+        <h2>da 120€ a 140€</h2>
       </div>
       <div class="col-md">
         <?php

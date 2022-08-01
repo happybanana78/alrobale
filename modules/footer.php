@@ -23,6 +23,11 @@
                     <p><i class="fa fa-envelope me-2"></i>info@alrobale.info</p>
                     <p><i class="fa fa-phone me-2"></i>+39 035 642633</p>
                 </div>
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Prenota con Booking!</h6>
+                    <img src="../assets/img/book.jpg" alt="" class="w-50">
+                    <button class="btn btn-lg btn-brown ms-3"><a class="text-decoration-none text-dark" href="https://www.booking.com/hotel/it/agriturismo-al-robale-almenno-san-bartolomeo1.it.html?aid=356980&label=gog235jc-1DCAsocUItYWdyaXR1cmlzbW8tYWwtcm9iYWxlLWFsbWVubm8tc2FuLWJhcnRvbG9tZW8xSAdYA2hxiAEBmAEHuAEXyAEM2AED6AEB-AECiAIBqAIDuAKHy56XBsACAdICJGIyYzU0YjlkLWJhNTMtNDRjMC05NmM5LTZhZmI2OWVmN2IyNtgCBOACAQ&sid=60f28669fda8671b60514e6219ebe352&dist=0&lang=it&room1=A%2CA&sb_price_type=total&soz=1&type=total&lang_click=other&cdl=de&lang_changed=1" target="_blank">Prenota</a></button>
+                </div>
             </div>
         </div>
     </section>
