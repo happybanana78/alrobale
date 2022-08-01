@@ -5,5 +5,5 @@ To do:
 
 - add menu display interface
 - add automatic menu pickup
-- add apartment cost strucure
+- add apartment cost structure
 - add new photos to gallery
