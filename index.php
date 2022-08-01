@@ -7,23 +7,24 @@ use alrobale\Slide;
 
 <!-- home section -->
 
-<section class="bg-land text-light p-5 text-center">
+<section class="bg-land text-light p-5">
   <div class="container">
     <div class="d-md-flex justify-content-lg-between align-items-center">
-      <?php
-        $imgPath = "assets/img/alrobale/";
-        $slide = new Slide($imgPath);
-        $imgCount = count($slide->loopDir());
-        for ($i = 0; $i < $imgCount; $i++) {
-          echo "<img src='" . $slide->loopDir()[$i] . "' alt='' class='home-slider-item w-50 img-fluid border rounded-4'>";
-        }
-      ?>
+      <div class='d-none d-md-block w-50'>
+        <?php
+          $imgPath = "assets/img/alrobale/";
+          $slide = new Slide($imgPath);
+          $imgCount = count($slide->loopDir());
+          for ($i = 0; $i < $imgCount; $i++) {
+            echo "<img src='" . $slide->loopDir()[$i] . "' alt='' class='home-slider-item img-fluid w-100 border rounded-4'>";
+          }
+        ?>
+      </div>
       <div class="mt-6 mb-5">
         <h1 class="text-light fs-20 title-shadow">Agriturismo Al Robale</h1><br>
         <h2 class="text-light fs-2 title-shadow">Solo su prenotazione</h2><br>
         <a class="btn btn-brown btn-lg fs-5" href="#footer">Prenota Ora!</a>
       </div>
-        
     </div>
   </div>
 </section>
@@ -57,7 +58,10 @@ use alrobale\Slide;
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <h3>La stanza è provvista di:</h3>
+        <div class="pb-3 border-brown">
+          <img class="img-fluid" src="../assets/img/alrobale/camera.JPG">
+        </div>
+        <h3 class="mt-2">La stanza è provvista di:</h3>
         <ul class="fs-4">
           <li><i class="fa-solid fa-bed"></i>&nbsp; Letto Matrimoniale</li>
           <li><i class="fa-solid fa-wind"></i>&nbsp; Aria Condizionata</li>
@@ -84,7 +88,10 @@ use alrobale\Slide;
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <h3>La stanza è provvista di:</h3>
+        <div class="pb-3 border-brown">
+          <img class="img-fluid" src="../assets/img/alrobale/camera.JPG">
+        </div>
+        <h3 class="mt-2">La stanza è provvista di:</h3>
         <ul class="fs-4">
           <li><i class="fa-solid fa-bed"></i>&nbsp; Letto Matrimoniale</li>
           <li><i class="fa-solid fa-wind"></i>&nbsp; Aria Condizionata</li>
@@ -111,7 +118,10 @@ use alrobale\Slide;
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <h3>La stanza è provvista di:</h3>
+        <div class="pb-3 border-brown">
+          <img class="img-fluid" src="../assets/img/alrobale/camera.JPG">
+        </div>
+        <h3 class="mt-2">La stanza è provvista di:</h3>
         <ul class="fs-4">
           <li><i class="fa-solid fa-bed"></i>&nbsp; Letto Matrimoniale</li>
           <li><i class="fa-solid fa-wind"></i>&nbsp; Aria Condizionata</li>
@@ -180,7 +190,7 @@ use alrobale\Slide;
   <div class="container text-center">
     <div class="row align-items-center border-brown border-brown-top py-4">
       <div class="col-md">
-      <img src="../assets/img/alrobale/camera.JPG" alt="" class="border rounded-4 w-50" role="button" data-bs-toggle="modal" data-bs-target="#single_room">
+      <img src="../assets/img/single.png" alt="" class="w-25" role="button" data-bs-toggle="modal" data-bs-target="#single_room">
       </div>
       <div class="col-md">
         <h2>Stanza Singola</h2>
@@ -199,7 +209,7 @@ use alrobale\Slide;
     </div>
     <div class="row align-items-center border-brown py-4">
       <div class="col-md">
-        <img src="../assets/img/alrobale/camera.JPG" alt="" class="border rounded-4 w-50" role="button" data-bs-toggle="modal" data-bs-target="#double_room">
+        <img src="../assets/img/double.png" alt="" class="w-25" role="button" data-bs-toggle="modal" data-bs-target="#double_room">
       </div>
       <div class="col-md">
         <h2>Stanza Doppia</h2>
@@ -218,7 +228,7 @@ use alrobale\Slide;
     </div>
     <div class="row align-items-center border-brown py-4">
       <div class="col-md">
-        <img src="../assets/img/alrobale/camera.JPG" alt="" class="border rounded-4 w-50" role="button" data-bs-toggle="modal" data-bs-target="#apartment">
+        <img src="../assets/img/home.png" alt="" class="w-25" role="button" data-bs-toggle="modal" data-bs-target="#apartment">
       </div>
       <div class="col-md">
         <h2>Appartamento</h2>
