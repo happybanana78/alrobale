@@ -26,7 +26,7 @@
       <div class="mt-6 mb-5 text-center">
         <h1 class="text-light fs-20 title-shadow">Agriturismo Al Robale</h1><br>
         <h2 class="text-light fs-2 title-shadow">Solo su prenotazione</h2><br>
-        <a class="btn btn-brown btn-lg fs-5" href="#footer">Prenota Ora!</a>
+        <a class="btn btn-brown btn-lg fs-5" href="#footer">Chiama Ora!</a>
       </div>
     </div>
   </div>
@@ -151,7 +151,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Prenotazione Camere</h5>
+        <h5 class="modal-title">Prenotazione Camere</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -187,7 +187,7 @@
         <br>
         <p class="fs-4 fw-bold text-center">Una volta inviata la prenotazione, 
           riceverai dai noi una mail non appena l'avremo confermata. Se vuoi pagare direttamente
-          online puoi ordinare tramite <a href="https://www.booking.com/hotel/it/agriturismo-al-robale-almenno-san-bartolomeo1.it.html?aid=356980&label=gog235jc-1DCAsocUItYWdyaXR1cmlzbW8tYWwtcm9iYWxlLWFsbWVubm8tc2FuLWJhcnRvbG9tZW8xSAdYA2hxiAEBmAEHuAEXyAEM2AED6AEB-AECiAIBqAIDuAKHy56XBsACAdICJGIyYzU0YjlkLWJhNTMtNDRjMC05NmM5LTZhZmI2OWVmN2IyNtgCBOACAQ&sid=60f28669fda8671b60514e6219ebe352&dist=0&lang=it&room1=A%2CA&sb_price_type=total&soz=1&type=total&lang_click=other&cdl=de&lang_changed=1" target="_blank">booking</a>.</p>
+          online puoi prenotare tramite <a href="https://www.booking.com/hotel/it/agriturismo-al-robale-almenno-san-bartolomeo1.it.html?aid=356980&label=gog235jc-1DCAsocUItYWdyaXR1cmlzbW8tYWwtcm9iYWxlLWFsbWVubm8tc2FuLWJhcnRvbG9tZW8xSAdYA2hxiAEBmAEHuAEXyAEM2AED6AEB-AECiAIBqAIDuAKHy56XBsACAdICJGIyYzU0YjlkLWJhNTMtNDRjMC05NmM5LTZhZmI2OWVmN2IyNtgCBOACAQ&sid=60f28669fda8671b60514e6219ebe352&dist=0&lang=it&room1=A%2CA&sb_price_type=total&soz=1&type=total&lang_click=other&cdl=de&lang_changed=1" target="_blank">booking</a>.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
@@ -197,17 +197,121 @@
   </div>
 </div>
 
+<!-- more info popup -->
+<div class="modal fade" id="more_info" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fs-3">Struttura costi camere</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table fs-4">
+          <thead>
+            <tr>
+              <th scope="col">Tipo Camera</th>
+              <th scope="col">Numero Persone</th>
+              <th scope="col">Colazione</th>
+              <th scope="col">Prezzo (a testa)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Camera Singola</td>
+              <td>1</td>
+              <td>Esclusa</td>
+              <td>100€</td>
+            </tr>
+            <tr>
+              <td>Camera Singola</td>
+              <td>1</td>
+              <td>Inclusa</td>
+              <td>120€</td>
+            </tr>
+            <tr>
+              <td>Camera Doppia</td>
+              <td>2</td>
+              <td>Esclusa</td>
+              <td>120€</td>
+            </tr>
+            <tr>
+              <td>Camera Doppia</td>
+              <td>2</td>
+              <td>Inclusa</td>
+              <td>140€</td>
+            </tr>
+            <tr>
+              <td>Appartamento</td>
+              <td>2</td>
+              <td>Esclusa</td>
+              <td>130€</td>
+            </tr>
+            <tr>
+              <td>Appartamento</td>
+              <td>2</td>
+              <td>Inclusa</td>
+              <td>140€</td>
+            </tr>
+            <tr>
+              <td>Appartamento</td>
+              <td>3</td>
+              <td>Esclusa</td>
+              <td>140€</td>
+            </tr>
+            <tr>
+              <td>Appartamento</td>
+              <td>3</td>
+              <td>Inclusa</td>
+              <td>150€</td>
+            </tr>
+            <tr>
+              <td>Appartamento</td>
+              <td>4</td>
+              <td>Esclusa</td>
+              <td>180€</td>
+            </tr>
+            <tr>
+              <td>Appartamento</td>
+              <td>4</td>
+              <td>Inclusa</td>
+              <td>200€</td>
+            </tr>
+            <tr>
+              <td>Appartamento</td>
+              <td>5</td>
+              <td>Esclusa</td>
+              <td>220€</td>
+            </tr>
+            <tr>
+              <td>Appartamento</td>
+              <td>5</td>
+              <td>Inclusa</td>
+              <td>250€</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <section id="rooms" class="bg-rooms p-5 text-dark">
   <div class="container text-center">
     <div class="row align-items-center border-brown border-brown-top py-4">
-      <div class="col-md">
+      <div class="col-md d-sm-block d-md-none d-lg-none d-xl-block d-xxl-block">
       <img src="../assets/img/single.png" alt="" class="w-25" role="button" data-bs-toggle="modal" data-bs-target="#single_room">
       </div>
       <div class="col-md">
         <h2>Stanza Singola</h2>
       </div>
       <div class="col-md">
-        <h2>da 100€ a 120€</h2>
+        <div class="d-lg-flex align-items-center"><h2>da 100€ a 120€</h2><a class="ms-lg-2 info-btn d-none d-sm-block w-100" data-bs-toggle="modal" data-bs-target="#more_info">(Più Info)</a></div>
+      </div>
+      <div class="col-md">
+        <h2>Disponibilità: 0</h2>
       </div>
       <div class="col-md">
         <?php
@@ -219,14 +323,17 @@
       </div>
     </div>
     <div class="row align-items-center border-brown py-4">
-      <div class="col-md">
+      <div class="col-md d-sm-block d-md-none d-lg-none d-xl-block d-xxl-block">
         <img src="../assets/img/double.png" alt="" class="w-25" role="button" data-bs-toggle="modal" data-bs-target="#double_room">
       </div>
       <div class="col-md">
         <h2>Stanza Doppia</h2>
       </div>
       <div class="col-md">
-        <h2>da 120€ a 140€</h2>
+        <div class="d-lg-flex align-items-center"><h2>da 120€ a 140€</h2><a class="ms-lg-2 info-btn d-none d-sm-block w-100" data-bs-toggle="modal" data-bs-target="#more_info">(Più Info)</a></div>
+      </div>
+      <div class="col-md">
+        <h2>Disponibilità: 0</h2>
       </div>
       <div class="col-md">
         <?php
@@ -238,14 +345,17 @@
       </div>
     </div>
     <div class="row align-items-center border-brown py-4">
-      <div class="col-md">
+      <div class="col-md d-sm-block d-md-none d-lg-none d-xl-block d-xxl-block">
         <img src="../assets/img/home.png" alt="" class="w-25" role="button" data-bs-toggle="modal" data-bs-target="#apartment">
       </div>
       <div class="col-md">
         <h2>Appartamento</h2>
       </div>
       <div class="col-md">
-        <h2>280€</h2>
+        <div class="d-lg-flex align-items-center"><h2>da 130€ a 250€</h2><a class="ms-lg-2 info-btn d-none d-sm-block w-100" data-bs-toggle="modal" data-bs-target="#more_info">(Più Info)</a></div>
+      </div>
+      <div class="col-md">
+        <h2>Disponibilità: 0</h2>
       </div>
       <div class="col-md">
         <?php

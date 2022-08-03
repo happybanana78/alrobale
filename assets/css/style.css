@@ -91,6 +91,10 @@ body {
     border-top: 1px solid brown;
 }
 
+.info-btn {
+    cursor: pointer;
+}
+
 /* map section */
 .bg-map {
     background-color: #000000;
