@@ -310,7 +310,7 @@
       <div class="col-md">
         <div class="d-lg-flex align-items-center"><h2>da 100€ a 120€</h2><a class="ms-lg-2 info-btn d-none d-sm-block w-100" data-bs-toggle="modal" data-bs-target="#more_info">(Più Info)</a></div>
       </div>
-      <div class="col-md">
+      <div class="col-md d-none">
         <h2>Disponibilità: 0</h2>
       </div>
       <div class="col-md">
@@ -332,7 +332,7 @@
       <div class="col-md">
         <div class="d-lg-flex align-items-center"><h2>da 120€ a 140€</h2><a class="ms-lg-2 info-btn d-none d-sm-block w-100" data-bs-toggle="modal" data-bs-target="#more_info">(Più Info)</a></div>
       </div>
-      <div class="col-md">
+      <div class="col-md d-none">
         <h2>Disponibilità: 0</h2>
       </div>
       <div class="col-md">
@@ -354,7 +354,7 @@
       <div class="col-md">
         <div class="d-lg-flex align-items-center"><h2>da 130€ a 250€</h2><a class="ms-lg-2 info-btn d-none d-sm-block w-100" data-bs-toggle="modal" data-bs-target="#more_info">(Più Info)</a></div>
       </div>
-      <div class="col-md">
+      <div class="col-md d-none">
         <h2>Disponibilità: 0</h2>
       </div>
       <div class="col-md">

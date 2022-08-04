@@ -3,7 +3,7 @@
 
   session_start();
 
-  use alrobale\Slide;
+  use alrobale\MenuController;
 ?>
 
 <!DOCTYPE html>
@@ -48,11 +48,22 @@
                 <a class="nav-link" href="#footer">Contatti</a>
               </li>
               <li class="nav-item dropdown">
+                <?php
+                    $menu = new MenuController();
+                    $menu->setPath("assets/docs/");
+                    $menu->setList();
+                    $menus = $menu->getList();
+                ?>
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Menù
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Menù Ferragosto 2022</a></li>
+                  <?php
+                    $counter = count($menus);
+                    for ($i = 0; $i < $counter; $i++) {
+                      echo "<li><a class='dropdown-item' href='" . $menus[$i]->getPath() . "' target='_blank'>" . $menus[$i]->getName() . "</a></li>";
+                    }
+                  ?>
                 </ul>
               </li>
             </ul>

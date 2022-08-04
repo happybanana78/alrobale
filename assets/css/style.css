@@ -35,6 +35,7 @@ body {
 .dropdown-item:hover {
     background-color: #e8c99b !important;
     background-image: linear-gradient(315deg, #e8c99b 0%, #e8bc85 74%) !important;
+    color: gray !important;
 }
 
 /* modal settings */
