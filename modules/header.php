@@ -60,8 +60,12 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <?php
                     $counter = count($menus);
-                    for ($i = 0; $i < $counter; $i++) {
-                      echo "<li><a class='dropdown-item' href='" . $menus[$i]->getPath() . "' target='_blank'>" . $menus[$i]->getName() . "</a></li>";
+                    if ($menus == array()) {
+                      echo "<li><a class='dropdown-item'>Nessun Menù Disponibile</a></li>";
+                    } else {
+                      for ($i = 0; $i < $counter; $i++) {
+                        echo "<li><a class='dropdown-item' href='" . $menus[$i]->getPath() . "' target='_blank'>" . $menus[$i]->getName() . "</a></li>";
+                      }
                     }
                   ?>
                 </ul>

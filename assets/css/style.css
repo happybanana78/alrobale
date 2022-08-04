@@ -17,6 +17,14 @@ body {
     font-family: Didot, serif !important;
 }
 
+.text-brown {
+    color: brown;
+}
+
+.text-brown:hover {
+    color: brown;
+}
+
 /* navbar settings */
 .nav-item a {
     font-size: 17pt;
