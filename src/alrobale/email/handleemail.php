@@ -1,8 +1,10 @@
 <?php
 
-namespace alrobale;
+namespace alrobale\email;
 
-class HandleEmail extends Dbh {
+use alrobale\db\Dbh as DB;
+
+class HandleEmail extends DB {
 
     protected function setEmail($email) {
 

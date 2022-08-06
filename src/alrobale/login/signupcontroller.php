@@ -1,6 +1,6 @@
 <?php
 
-namespace alrobale;
+namespace alrobale\login;
 
 class SignupController extends Signup {
 

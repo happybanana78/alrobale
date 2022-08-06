@@ -1,6 +1,6 @@
 <?php
 
-  use alrobale\Slide;
+  use alrobale\slideshow\Slide as Slide;
 
   require_once "vendor/autoload.php";
   

@@ -2,13 +2,13 @@
 
 require "../vendor/autoload.php";
 
-use alrobale\HandleEmailController;
+use alrobale\email\HandleEmailController as EmailHandle;
 
 if (isset($_POST["submit"])) {
 
     $newsEmail = $_POST["user_email"];
 
-    $email = new HandleEmailController($newsEmail);
+    $email = new EmailHandle($newsEmail);
 
     $email->mail();
 

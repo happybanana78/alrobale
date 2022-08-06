@@ -3,7 +3,7 @@
 
   session_start();
 
-  use alrobale\MenuController;
+  use alrobale\menu\MenuController as MenuCtr;
 ?>
 
 <!DOCTYPE html>
@@ -49,7 +49,7 @@
               </li>
               <li class="nav-item dropdown">
                 <?php
-                    $menu = new MenuController();
+                    $menu = new MenuCtr();
                     $menu->setPath("assets/docs/");
                     $menu->setList();
                     $menus = $menu->getList();

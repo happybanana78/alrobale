@@ -1,8 +1,8 @@
 <?php
 
-namespace alrobale;
+namespace alrobale\menu;
 
-use alrobale\Menu;
+use alrobale\menu\Menu as Menu;
 
 class MenuController {
     private $menuList;

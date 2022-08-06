@@ -3,11 +3,11 @@
 require "../vendor/autoload.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
-use alrobale\NewsLetterController;
+use alrobale\mail\NewsLetterController as News;
 
 $mail = new PHPMailer(true);
 
-$newsletter = new NewsLetterController;
+$newsletter = new News;
 
 $mail->isSMTP();
 $mail->SMTPAuth = true;

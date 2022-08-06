@@ -1,8 +1,10 @@
 <?php
 
-namespace alrobale;
+namespace alrobale\login;
 
-class Login extends Dbh {
+use alrobale\db\Dbh as DB;
+
+class Login extends DB {
 
     //search user into DB
     protected function getUser($user, $pwd) {

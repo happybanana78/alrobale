@@ -1,8 +1,10 @@
 <?php
 
-namespace alrobale;
+namespace alrobale\login;
 
-class Signup extends Dbh {
+use alrobale\db\Dbh as DB;
+
+class Signup extends DB {
 
     protected function checkUser($username, $email) {
 

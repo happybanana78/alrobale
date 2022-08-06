@@ -4,7 +4,7 @@ session_start();
 
 require "../vendor/autoload.php";
 
-use alrobale\Email;
+use alrobale\email\Email as Email;
 
 if (isset($_POST["reservation"])) {
 

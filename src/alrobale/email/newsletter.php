@@ -1,8 +1,10 @@
 <?php
 
-namespace alrobale;
+namespace alrobale\mail;
 
-class NewsLetter extends Dbh {
+use alrobale\db\Dbh as DB;
+
+class NewsLetter extends DB {
 
     //count email entries in DB
     protected function countEmails() {

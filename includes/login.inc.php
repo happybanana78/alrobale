@@ -2,7 +2,7 @@
 
 require "../vendor/autoload.php";
 
-use alrobale\LoginController;
+use alrobale\login\LoginController as LoginCtr;
 
 if (isset($_POST["login"])) {
 
@@ -10,7 +10,7 @@ if (isset($_POST["login"])) {
     $username = $_POST["username"];
     $password = $_POST["pwd"];
 
-    $login = new LoginController($username, $password);
+    $login = new LoginCtr($username, $password);
 
     $login->loginUser();
 

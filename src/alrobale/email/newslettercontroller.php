@@ -1,6 +1,6 @@
 <?php
 
-namespace alrobale;
+namespace alrobale\mail;
 
 class NewsLetterController extends NewsLetter {
 

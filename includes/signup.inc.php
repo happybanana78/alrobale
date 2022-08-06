@@ -2,7 +2,7 @@
 
 require "../vendor/autoload.php";
 
-use alrobale\SignupController;
+use alrobale\login\SignupController as SignupCtr;
 
 if (isset($_POST["signup"])) {
 
@@ -13,7 +13,7 @@ if (isset($_POST["signup"])) {
     $username = $_POST["username"];
     $userPwd = $_POST["user_pwd"];
 
-    $signUp = new SignupController($firstName, $lastName, $userEmail, $username, $userPwd);
+    $signUp = new SignupCtr($firstName, $lastName, $userEmail, $username, $userPwd);
     
     $signUp->signupUser();
     header("location: ../index.php");
