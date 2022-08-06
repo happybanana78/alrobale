@@ -6,7 +6,10 @@
     "autoload": {
         "psr-4": {
             "alrobale\\": "src/alrobale/"
-        }
+        },
+        "classmap": [
+            "src/alrobale/"
+        ]
     },
     "authors": [
         {
