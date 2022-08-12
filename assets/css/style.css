@@ -25,6 +25,10 @@ body {
     color: brown;
 }
 
+.reset-txt {
+    cursor: pointer;
+}
+
 /* navbar settings */
 .nav-item a {
     font-size: 17pt;

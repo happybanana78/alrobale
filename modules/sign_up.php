@@ -28,6 +28,9 @@
                 <label class="form-label">Password</label>
                 <input type="password" class="form-control" name="user_pwd">
             </div>
+            <div class="text-center">
+              <strong class="fs-5">Ti invieremo una mail di conferma, se non la vedi controlla la posta indesiderata</strong>
+            </div>
         </form>
       </div>
       <div class="modal-footer">

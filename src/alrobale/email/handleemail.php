@@ -21,7 +21,19 @@ class HandleEmail extends DB {
         $stmt = null;
     }
 
-    protected function getEmail() {
-        
+    protected function getEmail($userId) {
+        $sql = "SELECT * FROM users WHERE userId = '" . $userId . ";";
+
+        $stmt = $this->connect()->prepare($sql);
+
+        if (!$stmt->execute(array($userId))) {
+            $stmt = null;
+            header("location: ../index.php?error=something_went_wrong");
+            exit();
+        }
+
+        $userData = $stmt->fetchAll();
+
+        return $userData[0]["userEmail"];
     }
 }

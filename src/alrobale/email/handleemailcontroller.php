@@ -20,6 +20,11 @@ class HandleEmailController extends HandleEmail {
         $this->setEmail($this->userEmail);
     }
 
+    //get user email from DB
+    public function getMail($userId) {
+        return $this->getEmail($userId);
+    }
+
     //verify email
     private function verifyEmail() {
         if (!filter_var($this->userEmail, FILTER_VALIDATE_EMAIL)) {

@@ -17,6 +17,12 @@
                 <input type="password" class="form-control" name="pwd" required>
             </div>
         </form>
+        <div class="mt-2">
+          <a class="text-decoration-none text-brown reset-txt" onclick="document.getElementById('reset_btn').click()">Password dimenticata?</a>
+        </div>
+        <form action="../reset.php" method="post" class="d-none">
+          <button type="submit" name="submit" id="reset_btn"></button>
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Chiudi</button>
