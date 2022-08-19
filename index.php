@@ -386,4 +386,6 @@
   </div>
 </section>
 
+<?php include_once "modules/alerts.php" ?>
+
 <?php include_once "modules/footer.php" ?>
