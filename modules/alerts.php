@@ -245,5 +245,25 @@ if (isset($_GET["status"])) {
 
 <?php
     }
+    //password reset success
+    if ($_GET["status"] == "password_reset_success") {
+?>
+
+<div class="d-none d-sm-block">
+    <div id="alert_cs_password_reset_success" class="alert-bg hide" onclick="closeAlertPasswordResetSuccess()">
+    <div class="alert-body fs-1 text-center px-3">
+        <div class="row align-items-center mt-5">
+        <div class="col">
+            <p>Password reimpostata con successo!</p>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script src="assets/js/alert_password_reset_success.js"></script>
+
+<?php
+    }
 }  
 ?>
