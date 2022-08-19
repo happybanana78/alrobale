@@ -186,8 +186,43 @@
 
 <?php
     }
+}
+if (isset($_GET["status"])) {
+    //reset email success
+    if ($_GET["status"] == "reset_email_success") {
 ?>
 
+<div id="alert_cs_reset_email_success" class="alert-bg hide" onclick="closeAlertResetEmailSuccess()">
+  <div class="alert-body fs-1 text-center px-3">
+    <div class="row align-items-center mt-5">
+      <div class="col">
+        <p>Email Inviata con successo!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/alert_reset_email_success.js"></script>
+
 <?php
-  }
+    }
+    //registration success
+    if ($_GET["status"] == "registration_success") {
+?>
+
+<div id="alert_cs_registration_success" class="alert-bg hide" onclick="closeAlertRegistrationSuccess()">
+  <div class="alert-body fs-1 text-center px-3">
+    <div class="row align-items-center mt-5">
+      <div class="col">
+        <p>Registrazione effettuata con successo!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/alert_registration_success.js"></script>
+
+<?php
+    }
+}  
 ?>
